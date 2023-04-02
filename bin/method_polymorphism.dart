@@ -5,6 +5,7 @@
 //class parent
 class Employee {
   String name;
+  //constructor
   Employee(this.name);
 }
 
@@ -39,6 +40,8 @@ void main() {
 
   //sayHello
   sayHello(Employee('hadi'));
+  //manager merupakan turunan dari employee
   sayHello(Manager('hadi'));
+  //vicepresident merupakan turunan dari employee dan manager
   sayHello(VicePresident('hadi'));
 }
