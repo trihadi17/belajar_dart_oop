@@ -9,6 +9,6 @@ import 'data/animal.dart';
 void main() {
   var cat = Cat();
   // inheritance dari class parent
-  cat.name = 'Puss';
+  cat.name = 'Puss'; // mengubah field pada class
   cat.run();
 }

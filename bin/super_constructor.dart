@@ -3,6 +3,7 @@
 // Syaratnya untuk mengakses parent class constructo, kita harus mengaksesnya didalam class child constructor
 // Memanggil super constructor hanya bisa dilakukan dalam bentuk Redirecting Constructor
 //! Khusus untuk mengakses super constructor boleh menggunakan body, sedangkan redirecting constructor tidak boleh menggunakan body
+//! Jika di parent class terdapat constructor dengan parameter, maka di child class juga harus mendeklarasikan paremeter pada constructor di child class
 
 class Manager {
   String? name;

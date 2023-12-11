@@ -1,7 +1,7 @@
 // Extension Method
 //! adalah cara menambahkan method terhadap Class yang sudah ada, tanpa harus mengubah class tersebut.
-// cara membuat Extension method hampir mirip membuat class namun perlu menambahkan kata kunci extension
-// diikuti nama extensio lalu diikuti kata kunci on dan nama Class yang ingin kita tambahkan extension methodnya
+//! Hal ini adang bermanfaat jika misal CLass nya adalah Class milik libray yang bukan kita yang membuatnya
+// cara membuat Extension method hampir mirip membuat class namun perlu menambahkan kata kunci extension diikuti nama extensio lalu diikuti kata kunci on dan nama Class yang ingin kita tambahkan extension methodnya
 
 class Person {
   //! Variable

@@ -1,6 +1,16 @@
 // Operator
 //! adalah method dengan nama yang spesial dengan nama operator
 
+///! Daftar Operator
+/// < + | >>>
+/// > / ^ []
+/// <= ~/ & []=
+/// >= * << ~
+/// - % >> ==
+
+///! Membuat Operator
+///* Kita bisa seperti membuat Method, namun nama method diganti menjadi kata kunci 'operator' diikuti dengan operatornya
+
 class Orange {
   int quantity = 0;
 

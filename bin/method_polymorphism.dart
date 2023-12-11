@@ -19,7 +19,7 @@ class VicePresident extends Manager {
   VicePresident(String name) : super(name);
 }
 
-// method polymorphism
+// method polymorphism dengan syarat parameter nya dimasukin object
 void sayHello(Employee employee) {
   print('Hello ${employee.name}');
 }

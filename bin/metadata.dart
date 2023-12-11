@@ -1,6 +1,6 @@
 //* Metadata
 // fitur yang digunakan untuk menambah informasi tambahan pada kode program yang kita buat
-// Untuk menambahkan informasi tambahan ke dalam kode program kita, kita bisa menggunakan Annotation yang dimulai dengan karakter@ lalu diikuti dengan 'constant' atau constant concstructor
+// Untuk menambahkan informasi tambahan ke dalam kode program kita, kita bisa menggunakan Annotation yang dimulai dengan karakter '@' lalu diikuti dengan 'constant' atau constant concstructor
 
 //* Manfaat metadata
 // Saat ini, metadata mungkin tidak terlihat begitu berguna

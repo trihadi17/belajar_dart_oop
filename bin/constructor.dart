@@ -1,7 +1,7 @@
 // Constructor
 //! adalah method yang akan dipanggil saat pertama kali dibuat
 // nama constructor harus sama dengan class dan tidak membutuhkan kata kunci void atau return value
-// kektika menambahkan constructor pada class, maka saat membuat Object baru, kita wajib mengikuti parameter yang ada di constructor
+// ketika menambahkan constructor pada class, maka saat membuat Object baru, kita wajib mengikuti parameter yang ada di constructor
 //!di Dart tidak bisa membuat constructor lebih dari 1 pada satu class
 
 class Person {

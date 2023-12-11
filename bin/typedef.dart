@@ -4,7 +4,7 @@
 // Atau kita bisa mempersingkat nama class yang panjang dengan alias
 
 //Typedef untuk function
-// typedef juga bisa digunakan untuk embuat alias untuk Function
+// typedef juga bisa digunakan untuk membuat alias untuk Function
 // Namun perlu diperhatikan, sangat direkomendasikan tetap mendeklarasikan Function menggunakan deklarasi function, dibandikan menggunakan typedef
 
 //Class parent

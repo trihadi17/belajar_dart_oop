@@ -1,6 +1,6 @@
 // Redirecting Constructor
 //! Saat membuat Named Constructor, kita bisa memanggil Default Constructor (constructor biasa) atau istilah nya Redirecting Constructor
-//! cara membuat Redirecting Constructor adalah ' Person.withName(String name) : this(name, '')'
+//! cara membuat Redirecting Constructor adalah ' Person.withName(String name) : this(name, '') '
 //! this() adalah dianggap mengakses Default Constructor.
 //! pada Redirecting Constructor ini kita tidak bisa menambahkan body
 //! tidak hanya pada Default constructor, kita juga bisa redirecting constructor ke named constructor

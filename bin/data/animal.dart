@@ -12,6 +12,7 @@ abstract class Animal {
 }
 
 class Cat extends Animal {
+  //! WAJIB MEMASUKKAN METHOD ABSTRACT DI SETIAP CHILD YANG ADA PADA PARENT CLASS
   void run() {
     print('Cat $name is running');
   }

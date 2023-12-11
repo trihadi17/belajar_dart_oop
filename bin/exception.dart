@@ -13,14 +13,14 @@
 // Saat kita memanggil sebuah method ynag bisa menyebabkan exception, maka secara otomatis program akan berhenti
 // Jika kita tidak ingin program berhenti, kita perlu menangkap exception tersebut dan melakukan sesuatu ketika terjadi exception
 // Untuk menangkap exceptionm kita bisa menggunakan try-catch
-// Cara menggunaan try-catch sangat mudah, di block try, kita tinggal panggil method yang bisa menyebabkan exception dan di block catch, kita bisa melakukan sesuatu jika terjadi exception
+// Cara menggunaan try-catch sangat mudah, di block 'try', kita tinggal panggil method yang bisa menyebabkan exception dan di block 'catch', kita bisa melakukan sesuatu jika terjadi exception
 
 //* TRY Catch Semua Exception
 // Kadang kita tidakterlalu peduli dengan jenis class Exception
 // Pada Kasus seperti ini, kita bisa menyebuatkan class ketika melakukan try-catch
 
 //* FINALLY
-// Dalam try-catch, bisa bisa menambahkan block finally
+// Dalam try-catch, bisa bisa menambahkan block 'finally'
 // Block finllay ini adalah block dimana akan sealalu dieksekusi baik terjadi exception ataupun tidak
 // Ini Sangat cocok ketika kita ingin melakukan sesuatu, tidak peduli sukses ataupun gagal
 
@@ -46,6 +46,7 @@ class Validation {
 class ValidationException implements Exception {
   String message;
 
+  // Constructor
   ValidationException(this.message);
 }
 
@@ -74,6 +75,8 @@ void main() {
   try {
     //class Exception
     ValidationManual.validate('eko', '');
+    //Validation.validate('eko', '');
+
     // bisa menggunakan seperti ini -> on ValidationException / catch (ValidationException) yang merupakan nama exception nya
     // menangkap object exception (detail dari error nya) -> on ValidationException catch (exception)
   } on ValidationException catch (exception) {
@@ -92,7 +95,7 @@ void main() {
   }
 
   //* Penggunaan try-catch memanggil semua class exception yang ada, tanap peduli exception yang mana
-  /* try {
+  try {
     //class Exception
     ValidationManual.validate('eko', 'salah');
     //! catch (exception) merupakan memanggil semua exception tanpa menuliskan exception class nya
@@ -100,12 +103,12 @@ void main() {
     print('Error : ${exception.toString()}');
   } finally {
     print('Finally');
-  } */
+  }
 
   //*Penggunaan Stack Trace
-  /* try {
+  try {
     //class Exception
-    ValidationManual.validate('eko', 'eko');
+    ValidationManual.validate('eko', 'salah');
 
     //! Penggunaan StackTrace = stackTrace
   } on ValidationException catch (exception, stackTrace) {
@@ -118,7 +121,7 @@ void main() {
     print('Stack Trace : ${stackTrace.toString()}');
   } finally {
     print('Finally');
-  } */
+  }
 
   // akan di eksekusi jika ada error, tidak terhenti (jika menggunakan try catch)
   print('Selesai');

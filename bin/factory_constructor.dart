@@ -18,8 +18,17 @@ class Database {
 }
 
 void main() {
+  /* Umumnya */
   var database1 = Database();
   var database2 = Database();
 
-  print(database1 == database2);
+  print(database1 ==
+      database2); // bernilai false, karna objectnya akan selalu dibuat setiap pemanggilan
+
+  /* Factory constructor */
+  var database3 = Database.get();
+  var database4 = Database.get();
+
+  print(database3 ==
+      database4); // bernilai true karna hasilnya sama di object yang sama, hanya memanggil sekali saja
 }

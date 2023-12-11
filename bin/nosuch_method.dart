@@ -15,7 +15,7 @@ import 'data/repository.dart';
 void main() {
   //* jika tidak menggunakan abtract class
   //dynamic repository = Repository('products');
-  //* jika tidak menggunakan abtract class
+  //* jika menggunakan abtract class
   var repository = Repository('products');
 
   repository.id('1');

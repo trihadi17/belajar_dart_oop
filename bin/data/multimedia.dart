@@ -30,7 +30,7 @@ mixin Stopable {
   }
 }
 
-//* Membuat mixin dibatasi (hanya copy paste diseluruh kelas multimedia)
+//* Membuat mixin dibatasi (hanya copy paste diseluruh kelas multimedia dan turunan dari class multimedia)
 mixin Pause on Multimedia {
   String? name;
 
@@ -44,5 +44,6 @@ class Video with Playable, Stopable {}
 
 class Audio with Playable, Stopable {}
 
-//* Penggunaan Mixin dengan dibatasi
+//* Penggunaan Mixin dengan dibatasi (menambahkan parent class nya setelah itu memanggil mixin nya)
+//* Pausse merupakan mixin yang berada pada class parent Multimedia, jika kita ingin menggunakan mixin tersebut maka harus 'extends' nama class parent nya terlebih dahulu
 class VideoAudio extends Multimedia with Pause, Stopable {}

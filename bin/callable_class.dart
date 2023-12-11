@@ -8,11 +8,18 @@ class Sum {
   int first;
   int second;
 
+  //Constructor
   Sum(this.first, this.second);
 
+  /* Cara 1 (return value) */
   int call() {
     return first + second;
   }
+
+  /* Cara 2 */
+  /* call(String name){
+
+  } */
 }
 
 void main() {

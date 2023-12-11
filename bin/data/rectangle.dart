@@ -31,7 +31,7 @@ class Rectangle {
   //* Bisa menggunakan expression body
   /* int get width => _width; */
 
-  //setter
+  //setter (ada parameter)
   //! jika kita mengubah rectangle.width = 1 . maka otomatis akan memanggil setter ini
   set width(int value) {
     //* disarankan jika menggunakan setter harus ada validasi, jika mengambil saja disarnkan tidak memakai getter setter
@@ -48,7 +48,7 @@ class Rectangle {
     return _length;
   }
 
-  //setter
+  //setter(ada parameter)
   set length(int value) {
     //* disarankan jika menggunakan setter harus ada validasi, jika mengambil saja disarnkan tidak memakai getter setter
     if (value > 1) {

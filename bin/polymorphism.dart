@@ -5,6 +5,7 @@
 //class parent
 class Employee {
   String name;
+  // Constructor
   Employee(this.name);
 }
 
@@ -21,6 +22,8 @@ class VicePresident extends Manager {
 void main() {
   // class employee mempunyai turunan manager dan vice president (bisa menggunakan var / Employee)
   // Employee = merupakan variable class parent/object (memanggil langsugn class nya)
+
+  //! POLA POLYMORPHISM (Perubahan Bentuk)
   Employee employee = Employee('hadi');
   print(employee);
 

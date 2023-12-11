@@ -24,7 +24,7 @@ class Person {
 
   String getName(String fullName) {
     print(fullName);
-    return 'Hi, my name is $name';
+    return 'Hi $fullName, my name is $name';
   }
 }
 
@@ -48,7 +48,8 @@ void main() {
   //! memanggil method dalam object
   person1.sayHello('hadi');
   person1.hello();
-  person1.getName('ashdbhas');
+  var getFullName = person1.getName('Tiya Wulandari');
+  print(getFullName);
 
   //? Cara 2
   Person person2 = Person();

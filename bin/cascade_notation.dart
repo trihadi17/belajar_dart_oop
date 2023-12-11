@@ -9,7 +9,7 @@ class User {
   String? email;
 }
 
-// User? -> Object User nullable
+// User? (function) -> Object User nullable
 User? createUser() {
   return null;
 }
@@ -24,7 +24,7 @@ void main() {
   print(user.name);
   print(user.email);
 
-  //? Dengan Cascade Notation (Non Nullable)
+  //? Dengan Cascade Notation (Non Nullable) -> mempersingkat pemanggilan (short expression)
   var user2 = User()
     ..username = "trihadia"
     ..name = "hadia"
@@ -33,7 +33,7 @@ void main() {
   print(user2.name);
   print(user2.email);
 
-  //? Dengan Cascade Notation (Nullable)
+  //? Dengan Cascade Notation (Nullable) -> harus tambahkan tanda '?' di awal pemanggilan
   // var user3 = User? user3
   User? user3 = createUser()
     ?..username = "trihadii"

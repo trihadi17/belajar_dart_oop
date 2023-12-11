@@ -2,7 +2,7 @@
 // Secara default, saat kita membuat Field atau Method dalam sebuah class, maka semua Field dan Method tersebut bisa diakses oleh siapa saja
 // Kadang kadang kita ingin menyembukan Field atau Method
 // Untuk menyembunyikan akses Field atau method, kita bisa menambahkan '_' (underscore) diawal Field atau Methodnya
-// Secara otomatis FIeld atau Method tersebut, hanya bisa dikases dari file tersebut //! (hanya bisa digunakan pada file yang sama) dan bisa diakses dari luar file
+// Secara otomatis FIeld atau Method tersebut, hanya bisa dikases dari file tersebut //! (hanya bisa digunakan pada file yang sama) dan tidak bisa diakses dari luar file
 
 //! Import file product
 import 'data/product.dart';
